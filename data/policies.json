@@ -1,0 +1,88 @@
+{
+  "policies": [
+    {
+      "rule_id": "DPDP-001",
+      "law": "DPDP Act 2023 §16",
+      "description": "Aadhaar data processing requires explicit consent and must remain within MEITY-empaneled infrastructure. Unauthorized processing or cross-border transfer is prohibited.",
+      "trigger": {
+        "data_types": ["aadhaar"],
+        "sectors": ["*"]
+      },
+      "action": "BLOCK",
+      "penalty": "Up to ₹250 crore per violation",
+      "citation": "Digital Personal Data Protection Act, 2023, Section 16 — Processing of personal data of children and persons with disability"
+    },
+    {
+      "rule_id": "RBI-CIR-2023",
+      "law": "RBI IT Framework 2023",
+      "description": "Financial transaction data processed by AI systems in the banking sector must remain within Indian jurisdiction. Cross-border AI processing of financial PII is prohibited without RBI approval.",
+      "trigger": {
+        "data_types": ["financial"],
+        "sectors": ["banking", "finance", "fintech"]
+      },
+      "action": "BLOCK",
+      "penalty": "Regulatory action under RBI Act, potential license revocation",
+      "citation": "RBI Master Direction on IT Governance, Risk, Controls and Assurance Practices, 2023 + FREE-AI Framework August 2025"
+    },
+    {
+      "rule_id": "DPDP-002",
+      "law": "DPDP Act 2023 + ABDM Guidelines",
+      "description": "Health records processed via AI must comply with ABDM data sharing protocols. Patient consent must be verifiable and granular. Flagged for manual review.",
+      "trigger": {
+        "data_types": ["health"],
+        "sectors": ["healthcare", "hospital", "pharma"]
+      },
+      "action": "FLAG",
+      "penalty": "Up to ₹250 crore under DPDP + ABDM deregistration",
+      "citation": "DPDP Act 2023 + Ayushman Bharat Digital Mission Health Data Management Policy"
+    },
+    {
+      "rule_id": "IRDAI-2024",
+      "law": "IRDAI Data Guidelines 2024",
+      "description": "Biometric data used in insurance AI applications must be processed on Indian soil with explicit policyholder consent. Cross-border biometric processing is prohibited.",
+      "trigger": {
+        "data_types": ["biometric"],
+        "sectors": ["insurance", "insurtech"]
+      },
+      "action": "BLOCK",
+      "penalty": "IRDAI regulatory penalty + potential license suspension",
+      "citation": "IRDAI (Protection of Policyholders' Interests) Regulations 2024, Data Residency Clause"
+    },
+    {
+      "rule_id": "DPDP-003",
+      "law": "DPDP Act 2023 §8",
+      "description": "PAN card data is sensitive personal data. AI processing requires lawful purpose and explicit consent from the data principal.",
+      "trigger": {
+        "data_types": ["pan"],
+        "sectors": ["*"]
+      },
+      "action": "FLAG",
+      "penalty": "Up to ₹250 crore per violation",
+      "citation": "DPDP Act 2023, Section 8 — Obligations of Data Fiduciary"
+    },
+    {
+      "rule_id": "RBI-FREE-AI-001",
+      "law": "RBI FREE-AI Framework 2025",
+      "description": "AI models making credit decisions must maintain explainability records and model inventories. Board-approved AI governance policies are mandatory.",
+      "trigger": {
+        "data_types": ["financial", "aadhaar"],
+        "sectors": ["banking", "finance", "fintech"]
+      },
+      "action": "FLAG",
+      "penalty": "Regulatory directives under RBI FREE-AI Framework",
+      "citation": "RBI FREE-AI Framework, August 2025 — Recommendation 4: Model Inventory and Explainability"
+    },
+    {
+      "rule_id": "MEITY-AI-2025",
+      "law": "MeitY AI Governance Guidelines 2025",
+      "description": "High-risk AI deployments (credit scoring, healthcare diagnostics) require mandatory audits. Activity-based risk classification applies.",
+      "trigger": {
+        "data_types": ["health", "financial"],
+        "sectors": ["healthcare", "banking", "insurance"]
+      },
+      "action": "FLAG",
+      "penalty": "Mandatory audit requirement — non-compliance may trigger enforcement under DPDP Act",
+      "citation": "MeitY AI Governance Guidelines, November 2025 — High-Risk AI Classification Framework"
+    }
+  ]
+}
