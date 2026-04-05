@@ -3,6 +3,7 @@ Main entry point — starts the FastAPI compliance proxy server.
 """
 
 import uvicorn
+from api.proxy import app
 
 
 if __name__ == "__main__":
