@@ -9,11 +9,13 @@ Classifier -> Policy Engine -> Audit Logger
 import os
 import time
 from contextlib import asynccontextmanager
+from pathlib import Path
 from typing import Optional
 
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 
 from agents import classifier, policy_checker, logger, report_generator
@@ -98,7 +100,10 @@ class ChainVerification(BaseModel):
 
 @app.get("/")
 async def root():
-    """Root endpoint."""
+    """Serve the frontend HTML."""
+    html_path = Path(__file__).resolve().parent.parent / "ui" / "index.html"
+    if html_path.exists():
+        return FileResponse(html_path, media_type="text/html")
     return {
         "service": "AI Compliance Audit Proxy",
         "version": "0.1.0",
