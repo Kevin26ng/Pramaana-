@@ -96,6 +96,17 @@ class ChainVerification(BaseModel):
 
 # --- Endpoints ---
 
+@app.get("/")
+async def root():
+    """Root endpoint."""
+    return {
+        "service": "AI Compliance Audit Proxy",
+        "version": "0.1.0",
+        "docs": "/docs",
+        "health": "/health",
+    }
+
+
 @app.post("/audit", response_model=AuditResponse)
 async def audit_ai_call(request: AIRequest):
     """
