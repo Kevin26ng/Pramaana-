@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
@@ -14,21 +14,21 @@
           extend: {
             "colors": {
                     "primary": "#ffffff",
-                    "on-background": "#e2e8f0",
-                    "secondary": "#94a3b8",
-                    "surface": "#0a0f1e",
-                    "surface-dim": "#060b18",
-                    "on-surface": "#f1f5f9",
+                    "on-background": "#ffffff",
+                    "secondary": "#a1a1aa",
+                    "surface": "#000000",
+                    "surface-dim": "#000000",
+                    "on-surface": "#ffffff",
                     "inverse-surface": "#ffffff",
-                    "surface-bright": "#1a2235",
-                    "outline": "#334155",
-                    "background": "#060b18",
-                    "surface-container": "#0c1222",
-                    "surface-container-low": "#0a0f1e",
-                    "surface-container-high": "#141c2e",
-                    "surface-container-highest": "#1e293b",
-                    "accent": "#6366f1",
-                    "accent-warm": "#f59e0b"
+                    "surface-bright": "#18181b",
+                    "outline": "#3f3f46",
+                    "background": "#000000",
+                    "surface-container": "#09090b",
+                    "surface-container-low": "#09090b",
+                    "surface-container-high": "#18181b",
+                    "surface-container-highest": "#27272a",
+                    
+                    
             },
             "borderRadius": {
                     "DEFAULT": "0px",
@@ -46,26 +46,26 @@
       }
     </script>
 <style>body {
-    background-color: #060b18;
-    color: #f1f5f9;
+    background-color: #000;
+    color: #fff;
     font-family: "Space Grotesk", sans-serif
     }
 .material-symbols-outlined {
     font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24
     }
 .glass-panel {
-    background: rgba(99, 102, 241, 0.05);
+    background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(16px);
-    border: 1px solid rgba(99, 102, 241, 0.15)
+    border: 1px solid rgba(255, 255, 255, 0.1)
     }
 .glow-white {
-    box-shadow: 0 0 30px -5px rgba(99, 102, 241, 0.25)
+    box-shadow: 0 0 30px -5px rgba(255, 255, 255, 0.15)
     }
 .glow-accent {
-    box-shadow: 0 0 40px -8px rgba(99, 102, 241, 0.3)
+    box-shadow: 0 0 40px -8px rgba(255, 255, 255, 0.2)
     }
 .audit-line {
-    background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.5), transparent)
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent)
     }
 .mono-border {
     border: 1px solid rgba(148, 163, 184, 0.12)
@@ -81,7 +81,7 @@
 .scanline {
     width: 100%;
     height: 2px;
-    background: rgba(99, 102, 241, 0.3);
+    background: rgba(255, 255, 255, 0.2);
     position: absolute;
     top: 0;
     left: 0;
@@ -152,7 +152,7 @@
     }
 .card-hover:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 40px -12px rgba(99, 102, 241, 0.2);
+    box-shadow: 0 12px 40px -12px rgba(255, 255, 255, 0.1);
     }
 
 /* Floating gradient orbs (background decoration) */
@@ -181,7 +181,7 @@
 
 /* Gradient text */
 .text-gradient {
-    background: linear-gradient(135deg, #6366f1, #818cf8, #c4b5fd);
+    background: linear-gradient(135deg, #a1a1aa, #d4d4d8, #a1a1aa);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -193,14 +193,14 @@
     100% { background-position: 200% center; }
     }
 .shimmer-badge {
-    background: linear-gradient(90deg, transparent 30%, rgba(99, 102, 241, 0.15) 50%, transparent 70%);
+    background: linear-gradient(90deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
     background-size: 200% 100%;
     animation: shimmer 3s ease-in-out infinite;
     }</style>
 </head>
-<body class="bg-[#060b18] selection:bg-indigo-500 selection:text-white">
+<body class="bg-black selection:bg-white selection:text-black">
 <!-- Top Navigation Bar -->
-<nav class="fixed top-0 w-full z-50 bg-[#060b18]/85 backdrop-blur-xl border-b border-indigo-500/10">
+<nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
 <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
 <div class="flex items-center gap-3">
 <img src="logo.png" alt="AuditTrail AI" class="h-14 w-auto invert-0"/>
@@ -212,27 +212,27 @@
 <div class="relative group">
 <a class="text-white border-b border-white pb-1 cursor-pointer flex items-center gap-1" href="#">Product <span class="material-symbols-outlined text-[14px]">expand_more</span></a>
 <div class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-<div class="bg-[#0c1222]/95 backdrop-blur-xl border border-indigo-500/15 p-6 min-w-[280px] space-y-4 shadow-xl shadow-indigo-500/5">
+<div class="bg-black/95 backdrop-blur-xl border border-white/10 p-6 min-w-[280px] space-y-4 ">
 <a href="#" class="block group/item">
-<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-indigo-300 transition-colors">Classifier Agent</p>
-<p class="text-slate-600 text-[9px] tracking-widest mt-1 normal-case">Detect Aadhaar, PAN, health &amp; financial PII</p>
+<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-zinc-300 transition-colors">Classifier Agent</p>
+<p class="text-zinc-600 text-[9px] tracking-widest mt-1 normal-case">Detect Aadhaar, PAN, health &amp; financial PII</p>
 </a>
 <a href="#" class="block group/item">
-<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-indigo-300 transition-colors">Policy Engine</p>
-<p class="text-slate-600 text-[9px] tracking-widest mt-1 normal-case">DPDP, RBI &amp; IRDAI rule enforcement</p>
+<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-zinc-300 transition-colors">Policy Engine</p>
+<p class="text-zinc-600 text-[9px] tracking-widest mt-1 normal-case">DPDP, RBI &amp; IRDAI rule enforcement</p>
 </a>
 <a href="#" class="block group/item">
-<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-indigo-300 transition-colors">Audit Logger</p>
-<p class="text-slate-600 text-[9px] tracking-widest mt-1 normal-case">SHA-256 hash-chained immutable trail</p>
+<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-zinc-300 transition-colors">Audit Logger</p>
+<p class="text-zinc-600 text-[9px] tracking-widest mt-1 normal-case">SHA-256 hash-chained immutable trail</p>
 </a>
 <a href="#" class="block group/item">
-<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-indigo-300 transition-colors">Report Generator</p>
-<p class="text-slate-600 text-[9px] tracking-widest mt-1 normal-case">Regulator-ready PDF exports</p>
+<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-zinc-300 transition-colors">Report Generator</p>
+<p class="text-zinc-600 text-[9px] tracking-widest mt-1 normal-case">Regulator-ready PDF exports</p>
 </a>
-<div class="border-t border-slate-700/20 pt-4 mt-4">
+<div class="border-t border-white/5 pt-4 mt-4">
 <a href="#" class="block group/item">
-<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-indigo-300 transition-colors">API Reference</p>
-<p class="text-slate-600 text-[9px] tracking-widest mt-1 normal-case">FastAPI proxy &amp; REST endpoints</p>
+<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-zinc-300 transition-colors">API Reference</p>
+<p class="text-zinc-600 text-[9px] tracking-widest mt-1 normal-case">FastAPI proxy &amp; REST endpoints</p>
 </a>
 </div>
 </div>
@@ -241,40 +241,40 @@
 
 <!-- Solutions Dropdown -->
 <div class="relative group">
-<a class="text-slate-400 hover:text-white transition-all duration-300 cursor-pointer flex items-center gap-1" href="#">Solutions <span class="material-symbols-outlined text-[14px]">expand_more</span></a>
+<a class="text-zinc-500 hover:text-white transition-all duration-300 cursor-pointer flex items-center gap-1" href="#">Solutions <span class="material-symbols-outlined text-[14px]">expand_more</span></a>
 <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-<div class="bg-[#0c1222]/95 backdrop-blur-xl border border-indigo-500/15 p-6 min-w-[520px] grid grid-cols-2 gap-6 shadow-xl shadow-indigo-500/5">
+<div class="bg-black/95 backdrop-blur-xl border border-white/10 p-6 min-w-[520px] grid grid-cols-2 gap-6 ">
 <div>
-<p class="text-slate-600 text-[9px] uppercase tracking-[0.3em] mb-4 font-label">By Industry</p>
+<p class="text-zinc-600 text-[9px] uppercase tracking-[0.3em] mb-4 font-label">By Industry</p>
 <div class="space-y-4">
 <a href="#" class="block group/item">
-<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-indigo-300 transition-colors">Banking &amp; Finance</p>
-<p class="text-slate-600 text-[9px] tracking-widest mt-1 normal-case">Credit scoring &amp; transaction compliance</p>
+<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-zinc-300 transition-colors">Banking &amp; Finance</p>
+<p class="text-zinc-600 text-[9px] tracking-widest mt-1 normal-case">Credit scoring &amp; transaction compliance</p>
 </a>
 <a href="#" class="block group/item">
-<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-indigo-300 transition-colors">Healthcare</p>
-<p class="text-slate-600 text-[9px] tracking-widest mt-1 normal-case">Patient data &amp; ABDM compliance</p>
+<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-zinc-300 transition-colors">Healthcare</p>
+<p class="text-zinc-600 text-[9px] tracking-widest mt-1 normal-case">Patient data &amp; ABDM compliance</p>
 </a>
 <a href="#" class="block group/item">
-<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-indigo-300 transition-colors">Insurance</p>
-<p class="text-slate-600 text-[9px] tracking-widest mt-1 normal-case">Underwriting &amp; biometric audit</p>
+<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-zinc-300 transition-colors">Insurance</p>
+<p class="text-zinc-600 text-[9px] tracking-widest mt-1 normal-case">Underwriting &amp; biometric audit</p>
 </a>
 </div>
 </div>
 <div>
-<p class="text-slate-600 text-[9px] uppercase tracking-[0.3em] mb-4 font-label">By Use Case</p>
+<p class="text-zinc-600 text-[9px] uppercase tracking-[0.3em] mb-4 font-label">By Use Case</p>
 <div class="space-y-4">
 <a href="#" class="block group/item">
-<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-indigo-300 transition-colors">Credit Scoring Audit</p>
-<p class="text-slate-600 text-[9px] tracking-widest mt-1 normal-case">RBI FREE-AI compliant decisioning</p>
+<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-zinc-300 transition-colors">Credit Scoring Audit</p>
+<p class="text-zinc-600 text-[9px] tracking-widest mt-1 normal-case">RBI FREE-AI compliant decisioning</p>
 </a>
 <a href="#" class="block group/item">
-<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-indigo-300 transition-colors">Fraud Detection</p>
-<p class="text-slate-600 text-[9px] tracking-widest mt-1 normal-case">Transaction pattern compliance</p>
+<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-zinc-300 transition-colors">Fraud Detection</p>
+<p class="text-zinc-600 text-[9px] tracking-widest mt-1 normal-case">Transaction pattern compliance</p>
 </a>
 <a href="#" class="block group/item">
-<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-indigo-300 transition-colors">Patient Triage</p>
-<p class="text-slate-600 text-[9px] tracking-widest mt-1 normal-case">Health data monitoring &amp; consent</p>
+<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-zinc-300 transition-colors">Patient Triage</p>
+<p class="text-zinc-600 text-[9px] tracking-widest mt-1 normal-case">Health data monitoring &amp; consent</p>
 </a>
 </div>
 </div>
@@ -284,85 +284,85 @@
 
 <!-- Compliance Dropdown -->
 <div class="relative group">
-<a class="text-slate-400 hover:text-white transition-all duration-300 cursor-pointer flex items-center gap-1" href="#">Compliance <span class="material-symbols-outlined text-[14px]">expand_more</span></a>
+<a class="text-zinc-500 hover:text-white transition-all duration-300 cursor-pointer flex items-center gap-1" href="#">Compliance <span class="material-symbols-outlined text-[14px]">expand_more</span></a>
 <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-<div class="bg-[#0c1222]/95 backdrop-blur-xl border border-indigo-500/15 p-6 min-w-[320px] space-y-4 shadow-xl shadow-indigo-500/5">
+<div class="bg-black/95 backdrop-blur-xl border border-white/10 p-6 min-w-[320px] space-y-4 ">
 <a href="#" class="block group/item">
-<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-indigo-300 transition-colors">DPDP Act 2023</p>
-<p class="text-slate-600 text-[9px] tracking-widest mt-1 normal-case">Sections 4, 8, 16 â€” data principal rights</p>
+<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-zinc-300 transition-colors">DPDP Act 2023</p>
+<p class="text-zinc-600 text-[9px] tracking-widest mt-1 normal-case">Sections 4, 8, 16 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â data principal rights</p>
 </a>
 <a href="#" class="block group/item">
-<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-indigo-300 transition-colors">RBI FREE-AI Framework</p>
-<p class="text-slate-600 text-[9px] tracking-widest mt-1 normal-case">26 recommendations for AI in banking</p>
+<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-zinc-300 transition-colors">RBI FREE-AI Framework</p>
+<p class="text-zinc-600 text-[9px] tracking-widest mt-1 normal-case">26 recommendations for AI in banking</p>
 </a>
 <a href="#" class="block group/item">
-<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-indigo-300 transition-colors">IRDAI Data Guidelines</p>
-<p class="text-slate-600 text-[9px] tracking-widest mt-1 normal-case">Insurance data residency &amp; biometric rules</p>
+<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-zinc-300 transition-colors">IRDAI Data Guidelines</p>
+<p class="text-zinc-600 text-[9px] tracking-widest mt-1 normal-case">Insurance data residency &amp; biometric rules</p>
 </a>
 <a href="#" class="block group/item">
-<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-indigo-300 transition-colors">MeitY AI Governance</p>
-<p class="text-slate-600 text-[9px] tracking-widest mt-1 normal-case">High-risk AI classification &amp; mandatory audits</p>
+<p class="text-white text-[11px] uppercase tracking-widest group-hover/item:text-zinc-300 transition-colors">MeitY AI Governance</p>
+<p class="text-zinc-600 text-[9px] tracking-widest mt-1 normal-case">High-risk AI classification &amp; mandatory audits</p>
 </a>
-<div class="border-t border-slate-700/20 pt-4 mt-4">
-<a href="#" class="text-slate-400 hover:text-white text-[10px] uppercase tracking-widest transition-colors flex items-center gap-2">View Full Rulebook <span class="material-symbols-outlined text-[14px]">arrow_forward</span></a>
+<div class="border-t border-white/5 pt-4 mt-4">
+<a href="#" class="text-zinc-400 hover:text-white text-[10px] uppercase tracking-widest transition-colors flex items-center gap-2">View Full Rulebook <span class="material-symbols-outlined text-[14px]">arrow_forward</span></a>
 </div>
 </div>
 </div>
 </div>
 
 <!-- Pricing (no dropdown) -->
-<a class="text-slate-400 hover:text-white transition-all duration-300" href="#">Pricing</a>
+<a class="text-zinc-500 hover:text-white transition-all duration-300" href="#">Pricing</a>
 
 </div>
 <div class="flex items-center gap-6">
-<button class="text-slate-400 hover:text-white font-headline text-[11px] uppercase tracking-widest transition-all">Login</button>
-<button class="bg-indigo-500 text-white font-headline text-[11px] font-bold px-6 py-2.5 uppercase tracking-widest hover:bg-indigo-400 transition-all active:scale-95 shadow-lg shadow-indigo-500/20">Get Started</button>
+<button class="text-zinc-500 hover:text-white font-headline text-[11px] uppercase tracking-widest transition-all">Login</button>
+<button class="bg-white text-black font-headline text-[11px] font-bold px-6 py-2.5 uppercase tracking-widest hover:bg-zinc-200 transition-all active:scale-95 shadow-lg shadow-white/10">Get Started</button>
 </div>
 </div>
 </nav>
-<!-- Hero Section â€” Full-bleed video background with text overlay -->
+<!-- Hero Section ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Full-bleed video background with text overlay -->
 <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
 <!-- Video Background -->
 <video class="absolute inset-0 w-full h-full object-cover z-0" autoplay loop muted playsinline>
 <source src= "C:\Users\KIIT0001\Downloads\Untitled design.mp4" type="video/mp4"/>
 </video>
 <!-- Light overlay so text stays readable but video is brighter -->
-<div class="absolute inset-0 bg-[#060b18]/40"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-[#060b18]/80 via-transparent to-[#060b18]/50"></div>
+<div class="absolute inset-0 bg-black/15"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/15"></div>
 <!-- Text Content -->
 <div class="relative z-10 text-center max-w-4xl mx-auto px-6 space-y-8">
-<div class="inline-block border border-indigo-400/30 bg-indigo-500/10 px-4 py-1.5 font-label text-[10px] tracking-[0.2em] uppercase text-indigo-300 shimmer-badge">Immersion Corridor Active</div>
+<div class="inline-block border border-white/20 bg-white/5 px-4 py-1.5 font-label text-[10px] tracking-[0.2em] uppercase text-zinc-300 shimmer-badge">Immersion Corridor Active</div>
 <h1 class="text-5xl lg:text-7xl font-headline font-bold leading-tight tracking-tighter text-white">
                 Audit Every AI Decision. <br/>
 <span class="text-gradient">Prove Compliance.</span>
 </h1>
-<p class="text-lg text-slate-400 max-w-2xl mx-auto font-body leading-relaxed">
-                The AI compliance layer built for DPDP Act, RBI FREE-AI, and IRDAI â€” so your regulated AI decisions come with legal proof, not just engineering logs.
+<p class="text-lg text-zinc-500 max-w-2xl mx-auto font-body leading-relaxed">
+                The AI compliance layer built for DPDP Act, RBI FREE-AI, and IRDAI ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â so your regulated AI decisions come with legal proof, not just engineering logs.
             </p>
 <div class="flex flex-wrap justify-center gap-4 pt-4">
-<div class="group p-4 bg-indigo-500/5 border border-indigo-400/15 hover:border-indigo-400/40 hover:bg-indigo-500/10 transition-all backdrop-blur-sm card-hover">
-<span class="material-symbols-outlined text-indigo-300 mb-2" data-icon="fingerprint">fingerprint</span>
+<div class="group p-4 bg-white/5 border border-white/10 hover:border-white/30 hover:bg-white/5 transition-all backdrop-blur-sm card-hover">
+<span class="material-symbols-outlined text-zinc-300 mb-2" data-icon="fingerprint">fingerprint</span>
 <h3 class="font-headline font-bold text-white text-sm uppercase tracking-wider">Aadhaar &amp; PAN Detection</h3>
 </div>
-<div class="group p-4 bg-indigo-500/5 border border-indigo-400/15 hover:border-indigo-400/40 hover:bg-indigo-500/10 transition-all backdrop-blur-sm card-hover">
-<span class="material-symbols-outlined text-indigo-300 mb-2" data-icon="gavel">gavel</span>
+<div class="group p-4 bg-white/5 border border-white/10 hover:border-white/30 hover:bg-white/5 transition-all backdrop-blur-sm card-hover">
+<span class="material-symbols-outlined text-zinc-300 mb-2" data-icon="gavel">gavel</span>
 <h3 class="font-headline font-bold text-white text-sm uppercase tracking-wider">DPDP &amp; RBI Rules</h3>
 </div>
-<div class="group p-4 bg-indigo-500/5 border border-indigo-400/15 hover:border-indigo-400/40 hover:bg-indigo-500/10 transition-all backdrop-blur-sm card-hover">
-<span class="material-symbols-outlined text-indigo-300 mb-2" data-icon="link">link</span>
+<div class="group p-4 bg-white/5 border border-white/10 hover:border-white/30 hover:bg-white/5 transition-all backdrop-blur-sm card-hover">
+<span class="material-symbols-outlined text-zinc-300 mb-2" data-icon="link">link</span>
 <h3 class="font-headline font-bold text-white text-sm uppercase tracking-wider">Hash-Chained Trail</h3>
 </div>
-<div class="group p-4 bg-indigo-500/5 border border-indigo-400/15 hover:border-indigo-400/40 hover:bg-indigo-500/10 transition-all backdrop-blur-sm card-hover">
-<span class="material-symbols-outlined text-indigo-300 mb-2" data-icon="description">description</span>
+<div class="group p-4 bg-white/5 border border-white/10 hover:border-white/30 hover:bg-white/5 transition-all backdrop-blur-sm card-hover">
+<span class="material-symbols-outlined text-zinc-300 mb-2" data-icon="description">description</span>
 <h3 class="font-headline font-bold text-white text-sm uppercase tracking-wider">Regulator PDF Export</h3>
 </div>
 </div>
 </div>
 </section>
 <!-- Social Proof -->
-<section class="relative z-10 py-16 bg-[#0a0f1e] border-y border-indigo-500/10">
+<section class="relative z-10 py-16 bg-zinc-950 border-y border-white/10">
 <div class="max-w-7xl mx-auto px-6 text-center">
-<p class="text-slate-500 uppercase tracking-[0.3em] text-[10px] font-label mb-10">Institutional Compliance Standards</p>
+<p class="text-zinc-500 uppercase tracking-[0.3em] text-[10px] font-label mb-10">Institutional Compliance Standards</p>
 <div class="flex flex-wrap justify-center gap-16 opacity-30 invert">
 <img alt="HDFC" class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsfUlceIimTkWD6yDOwDzOciXo_iWD1tFFi7IDHI_19JFeYf7I8dQpwwBQtJ58cSdhAxbxqSqO4ZWV3Eif2l4reoiB3CiPfKcOHvo6_NvPzkrHBV0lSqnUMpySqhKoH4_3XiAfVd2fMvSBP9-s3V6F6Zy_b35Kzu7rIYkWRlwmeMQNjR8Co6bHnKgIRfs6AnTP6awlBFvAVYBfClyuRYTNatZimS9ylkZz52p5q3cJVX_jJDJHCDTXqDxXt9nBiYtEDCt7C2UneGg"/>
 <img alt="ICICI" class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDycUb1oPAC5RTI98D10RbQXbVWL3bxOQ_M-dsGkomqx5jSIEoR0yVv5tdy_nImwdmcPhzZezknGTej00JbvZrDeJAbgryvxbIh6pyWm2SgCBYrus3ieWZdIANXFWIq3t5j51P66FS7rYbdn0TbQfA7x1vZKtUF6lgvM3XwDhPDbFv0Syg2CcxhYYMUbw0LqxgHPv0aId658Udt_abXleUntVG_sBmJ7ylTFfDtxuKqhqVl20Koc4sza5lEUhlQzRfWBzStnKdxmD4"/>
@@ -373,111 +373,111 @@
 </div>
 </section>
 <!-- How It Works -->
-<section class="relative z-10 py-24 bg-[#060b18] overflow-hidden">
+<section class="relative z-10 py-24 bg-black overflow-hidden">
 <div class="max-w-7xl mx-auto px-6">
 <div class="mb-20 text-center reveal">
 <h2 class="text-4xl font-headline font-bold text-white mb-4 uppercase tracking-tighter">The 3-Agent Compliance Architecture</h2>
-<p class="text-slate-400 max-w-2xl mx-auto font-body">Our proprietary pipeline ensures that every AI interaction is filtered, verified, and recorded before it ever reaches the user.</p>
+<p class="text-zinc-500 max-w-2xl mx-auto font-body">Our proprietary pipeline ensures that every AI interaction is filtered, verified, and recorded before it ever reaches the user.</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-slate-700/30 reveal">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-white/10 reveal">
 <!-- Classifier Agent -->
-<div class="p-10 border-slate-700/30 md:border-r hover:bg-indigo-500/5 transition-all duration-500 group">
-<div class="w-10 h-10 border border-indigo-400/30 flex items-center justify-center mb-8 group-hover:border-indigo-400/60 transition-colors">
-<span class="material-symbols-outlined text-indigo-300" data-icon="search_check">search_check</span>
+<div class="p-10 border-white/10 md:border-r hover:bg-white/5 transition-all duration-500 group">
+<div class="w-10 h-10 border border-white/20 flex items-center justify-center mb-8 group-hover:border-white/50 transition-colors">
+<span class="material-symbols-outlined text-zinc-300" data-icon="search_check">search_check</span>
 </div>
 <h3 class="text-xl font-headline font-bold mb-4 uppercase tracking-widest">Classifier Agent</h3>
-<p class="text-sm text-slate-400 font-body mb-8 leading-relaxed">Identifies sensitive data including PAN, Aadhaar, and PII across 22 Indian languages using localized NLP.</p>
-<div class="text-[9px] font-label text-slate-600 uppercase tracking-widest border-t border-slate-700/30 pt-4">Caps: PII Scanning, Language Detection</div>
+<p class="text-sm text-zinc-500 font-body mb-8 leading-relaxed">Identifies sensitive data including PAN, Aadhaar, and PII across 22 Indian languages using localized NLP.</p>
+<div class="text-[9px] font-label text-zinc-600 uppercase tracking-widest border-t border-white/10 pt-4">Caps: PII Scanning, Language Detection</div>
 </div>
 <!-- Policy Engine -->
-<div class="p-10 border-slate-700/30 md:border-r hover:bg-indigo-500/5 transition-all duration-500 group">
-<div class="w-10 h-10 border border-indigo-400/30 flex items-center justify-center mb-8 group-hover:border-indigo-400/60 transition-colors">
-<span class="material-symbols-outlined text-indigo-300" data-icon="policy">policy</span>
+<div class="p-10 border-white/10 md:border-r hover:bg-white/5 transition-all duration-500 group">
+<div class="w-10 h-10 border border-white/20 flex items-center justify-center mb-8 group-hover:border-white/50 transition-colors">
+<span class="material-symbols-outlined text-zinc-300" data-icon="policy">policy</span>
 </div>
 <h3 class="text-xl font-headline font-bold mb-4 uppercase tracking-widest">Policy Engine</h3>
-<p class="text-sm text-slate-400 font-body mb-8 leading-relaxed">Evaluates prompts against the DPDP Act and RBI Master Directions. Cross-references against internal corporate policy.</p>
-<div class="text-[9px] font-label text-slate-600 uppercase tracking-widest border-t border-slate-700/30 pt-4">Caps: Regulatory Logic, Custom Rules</div>
+<p class="text-sm text-zinc-500 font-body mb-8 leading-relaxed">Evaluates prompts against the DPDP Act and RBI Master Directions. Cross-references against internal corporate policy.</p>
+<div class="text-[9px] font-label text-zinc-600 uppercase tracking-widest border-t border-white/10 pt-4">Caps: Regulatory Logic, Custom Rules</div>
 </div>
 <!-- Audit Logger -->
-<div class="p-10 hover:bg-indigo-500/5 transition-all duration-500 group">
-<div class="w-10 h-10 border border-indigo-400/30 flex items-center justify-center mb-8 group-hover:border-indigo-400/60 transition-colors">
-<span class="material-symbols-outlined text-indigo-300" data-icon="database">database</span>
+<div class="p-10 hover:bg-white/5 transition-all duration-500 group">
+<div class="w-10 h-10 border border-white/20 flex items-center justify-center mb-8 group-hover:border-white/50 transition-colors">
+<span class="material-symbols-outlined text-zinc-300" data-icon="database">database</span>
 </div>
 <h3 class="text-xl font-headline font-bold mb-4 uppercase tracking-widest">Audit Logger</h3>
-<p class="text-sm text-slate-400 font-body mb-8 leading-relaxed">Secures the trail using SHA-256 hash-chaining. Records original prompt, flag status, and decision metadata.</p>
-<div class="text-[9px] font-label text-slate-600 uppercase tracking-widest border-t border-slate-700/30 pt-4">Caps: Hash Chaining, Immutability</div>
+<p class="text-sm text-zinc-500 font-body mb-8 leading-relaxed">Secures the trail using SHA-256 hash-chaining. Records original prompt, flag status, and decision metadata.</p>
+<div class="text-[9px] font-label text-zinc-600 uppercase tracking-widest border-t border-white/10 pt-4">Caps: Hash Chaining, Immutability</div>
 </div>
 </div>
 <!-- Wide Card: Report Generator -->
-<div class="mt-12 p-10 border border-slate-700/30 flex flex-col md:flex-row items-center gap-10 bg-indigo-500/[0.03] reveal">
+<div class="mt-12 p-10 border border-white/10 flex flex-col md:flex-row items-center gap-10 bg-white/[0.02] reveal">
 <div class="md:w-2/3">
 <h3 class="text-2xl font-headline font-bold mb-4 uppercase tracking-tight">Regulator-Ready PDF Reports</h3>
-<p class="text-slate-400 font-body leading-relaxed">Don't show regulators a spreadsheet. Export professional, formatted audit summaries that specifically map AI decisions to legal clauses in the DPDP Act 2023.</p>
+<p class="text-zinc-500 font-body leading-relaxed">Don't show regulators a spreadsheet. Export professional, formatted audit summaries that specifically map AI decisions to legal clauses in the DPDP Act 2023.</p>
 </div>
 <div class="md:w-1/3 text-right">
-<button class="bg-transparent border border-indigo-400/40 text-white px-8 py-4 uppercase font-label text-[10px] tracking-[0.2em] hover:bg-indigo-500 hover:border-indigo-500 transition-all duration-300">Generate Sample Report</button>
+<button class="bg-transparent border border-white/30 text-white px-8 py-4 uppercase font-label text-[10px] tracking-[0.2em] hover:bg-white hover:border-white transition-all duration-300">Generate Sample Report</button>
 </div>
 </div>
 </div>
 </section>
 <!-- Live Demo / Console -->
-<section class="relative z-10 py-24 bg-[#0a0f1e] border-y border-indigo-500/10">
+<section class="relative z-10 py-24 bg-zinc-950 border-y border-white/10">
 <div class="max-w-7xl mx-auto px-6">
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
 <div class="reveal-left">
 <h2 class="text-4xl font-headline font-bold text-white mb-8 uppercase tracking-tighter">Real-Time Compliance Observability</h2>
-<p class="text-slate-400 font-body mb-10 leading-relaxed">Watch your AI ecosystem's compliance health in real-time. Our console monitors every call, provides instant law citations, and triggers alerts for high-risk violations.</p>
+<p class="text-zinc-500 font-body mb-10 leading-relaxed">Watch your AI ecosystem's compliance health in real-time. Our console monitors every call, provides instant law citations, and triggers alerts for high-risk violations.</p>
 <ul class="space-y-6">
-<li class="flex items-center gap-4 font-label text-[10px] uppercase tracking-widest text-slate-400">
-<span class="w-1.5 h-1.5 bg-indigo-400 pulse-dot"></span>
+<li class="flex items-center gap-4 font-label text-[10px] uppercase tracking-widest text-zinc-400">
+<span class="w-1.5 h-1.5 bg-white pulse-dot"></span>
                         Live Monitoring Feed
                     </li>
-<li class="flex items-center gap-4 font-label text-[10px] uppercase tracking-widest text-slate-400">
-<span class="w-1.5 h-1.5 bg-indigo-400 pulse-dot"></span>
+<li class="flex items-center gap-4 font-label text-[10px] uppercase tracking-widest text-zinc-400">
+<span class="w-1.5 h-1.5 bg-white pulse-dot"></span>
                         Automatic Law Citation Mapping
                     </li>
-<li class="flex items-center gap-4 font-label text-[10px] uppercase tracking-widest text-slate-400">
-<span class="w-1.5 h-1.5 bg-indigo-400 pulse-dot"></span>
+<li class="flex items-center gap-4 font-label text-[10px] uppercase tracking-widest text-zinc-400">
+<span class="w-1.5 h-1.5 bg-white pulse-dot"></span>
                         One-Click Deep Forensic Investigation
                     </li>
 </ul>
 </div>
-<div class="bg-[#0c1222] border border-slate-700/30 shadow-[0_0_50px_rgba(99,102,241,0.08)] overflow-hidden font-label text-[10px] reveal-right">
-<div class="bg-[#111827]/80 px-5 py-3 border-b border-slate-700/30 flex items-center justify-between">
+<div class="bg-black border border-white/10 shadow-[0_0_50px_rgba(255,255,255,0.05)] overflow-hidden font-label text-[10px] reveal-right">
+<div class="bg-zinc-900/80 px-5 py-3 border-b border-white/10 flex items-center justify-between">
 <div class="flex gap-2">
-<div class="w-2 h-2 rounded-full bg-indigo-400/40"></div>
-<div class="w-2 h-2 rounded-full bg-slate-500/40"></div>
-<div class="w-2 h-2 rounded-full bg-slate-500/40"></div>
+<div class="w-2 h-2 rounded-full bg-white/20"></div>
+<div class="w-2 h-2 rounded-full bg-zinc-500/40"></div>
+<div class="w-2 h-2 rounded-full bg-zinc-500/40"></div>
 </div>
-<div class="text-slate-600 uppercase tracking-widest">compliance_monitor_v2.0</div>
+<div class="text-zinc-600 uppercase tracking-widest">compliance_monitor_v2.0</div>
 </div>
 <div class="p-6 space-y-6 max-h-[400px] overflow-y-auto">
 <div class="flex items-start gap-4">
-<span class="text-slate-600">[14:22:01]</span>
+<span class="text-zinc-600">[14:22:01]</span>
 <div class="flex-1">
 <span class="bg-emerald-500 text-white px-2 py-0.5 font-bold">ALLOW</span>
-<span class="text-slate-300 ml-3">Request: "How do I update my KYC?"</span>
-<p class="text-slate-600 mt-2">Audit ID: audit_82kL90 | Citation: RBI-CIR-2023-44(A)</p>
+<span class="text-zinc-300 ml-3">Request: "How do I update my KYC?"</span>
+<p class="text-zinc-600 mt-2">Audit ID: audit_82kL90 | Citation: RBI-CIR-2023-44(A)</p>
 </div>
 </div>
 <div class="flex items-start gap-4">
-<span class="text-slate-600">[14:22:05]</span>
+<span class="text-zinc-600">[14:22:05]</span>
 <div class="flex-1">
 <span class="border border-amber-400 text-amber-400 px-2 py-0.5 font-bold">FLAG</span>
-<span class="text-slate-300 ml-3">Request: "Process loan for Aadhaar ending in 4421"</span>
-<p class="text-slate-600 mt-2">Audit ID: audit_82kL91 | Citation: DPDP-001 (Section 4)</p>
+<span class="text-zinc-300 ml-3">Request: "Process loan for Aadhaar ending in 4421"</span>
+<p class="text-zinc-600 mt-2">Audit ID: audit_82kL91 | Citation: DPDP-001 (Section 4)</p>
 </div>
 </div>
 <div class="flex items-start gap-4">
-<span class="text-slate-600">[14:22:12]</span>
+<span class="text-zinc-600">[14:22:12]</span>
 <div class="flex-1">
 <span class="bg-red-500 text-white px-2 py-0.5 font-bold">BLOCK</span>
-<span class="text-slate-300 ml-3">Response: Contains raw medical diagnostic report</span>
-<p class="text-slate-600 mt-2">Audit ID: audit_82kL92 | Violation: IRDAI-2024-HEALTH-PRIVACY</p>
+<span class="text-zinc-300 ml-3">Response: Contains raw medical diagnostic report</span>
+<p class="text-zinc-600 mt-2">Audit ID: audit_82kL92 | Violation: IRDAI-2024-HEALTH-PRIVACY</p>
 </div>
 </div>
-<div class="animate-pulse text-indigo-300 flex items-center gap-3 pt-4 border-t border-slate-700/20">
-<span class="w-2 h-2 bg-indigo-400 rounded-full"></span>
+<div class="animate-pulse text-white flex items-center gap-3 pt-4 border-t border-white/5">
+<span class="w-2 h-2 bg-white rounded-full"></span>
 <span class="uppercase tracking-widest">Monitoring activity...</span>
 </div>
 </div>
@@ -486,150 +486,150 @@
 </div>
 </section>
 <!-- Differentiator Table -->
-<section class="relative z-10 py-24 bg-[#060b18]">
+<section class="relative z-10 py-24 bg-black">
 <div class="max-w-4xl mx-auto px-6">
 <h2 class="text-center text-3xl font-headline font-bold mb-16 uppercase tracking-tighter reveal">Enterprise Differentiator</h2>
-<div class="grid grid-cols-2 border border-slate-700/30 shadow-2xl reveal-scale">
+<div class="grid grid-cols-2 border border-white/10 shadow-2xl reveal-scale">
 <!-- Header -->
-<div class="bg-[#111827] p-8 border-r border-b border-slate-700/30">
-<h3 class="text-slate-500 font-headline font-bold text-[10px] uppercase tracking-[0.3em]">Global Tools</h3>
+<div class="bg-zinc-900 p-8 border-r border-b border-white/10">
+<h3 class="text-zinc-500 font-headline font-bold text-[10px] uppercase tracking-[0.3em]">Global Tools</h3>
 </div>
-<div class="bg-indigo-500 p-8 border-b border-slate-700/30">
+<div class="bg-white p-8 border-b border-white/10">
 <h3 class="text-white font-headline font-bold text-[10px] uppercase tracking-[0.3em]">AuditTrail AI</h3>
 </div>
 <!-- Row 1 -->
-<div class="p-8 border-r border-b border-slate-700/30">
+<div class="p-8 border-r border-b border-white/10">
 <p class="font-headline font-bold text-sm uppercase mb-1">Generic GDPR Focus</p>
-<p class="text-[10px] text-slate-500 font-label uppercase">EU/US privacy only.</p>
+<p class="text-[10px] text-zinc-500 font-label uppercase">EU/US privacy only.</p>
 </div>
-<div class="p-8 border-b border-slate-700/30 bg-indigo-500/5">
+<div class="p-8 border-b border-white/10 bg-white/5">
 <p class="font-headline font-bold text-white text-sm uppercase mb-1">DPDP &amp; RBI Focused</p>
-<p class="text-[10px] text-indigo-300 font-label uppercase">Built for Indian stack.</p>
+<p class="text-[10px] text-zinc-300 font-label uppercase">Built for Indian stack.</p>
 </div>
 <!-- Row 2 -->
-<div class="p-8 border-r border-b border-slate-700/30">
+<div class="p-8 border-r border-b border-white/10">
 <p class="font-headline font-bold text-sm uppercase mb-1">Basic PII Detection</p>
-<p class="text-[10px] text-slate-500 font-label uppercase">SSN and IBAN scanning.</p>
+<p class="text-[10px] text-zinc-500 font-label uppercase">SSN and IBAN scanning.</p>
 </div>
-<div class="p-8 border-b border-slate-700/30 bg-indigo-500/5">
+<div class="p-8 border-b border-white/10 bg-white/5">
 <p class="font-headline font-bold text-white text-sm uppercase mb-1">Aadhaar &amp; PAN Native</p>
-<p class="text-[10px] text-indigo-300 font-label uppercase">Deep local ID scanning.</p>
+<p class="text-[10px] text-zinc-300 font-label uppercase">Deep local ID scanning.</p>
 </div>
 <!-- Row 3 -->
-<div class="p-8 border-r border-slate-700/30">
+<div class="p-8 border-r border-white/10">
 <p class="font-headline font-bold text-sm uppercase mb-1">Standard Dashboard</p>
-<p class="text-[10px] text-slate-500 font-label uppercase">JSON log exports.</p>
+<p class="text-[10px] text-zinc-500 font-label uppercase">JSON log exports.</p>
 </div>
-<div class="p-8 bg-indigo-500/5">
+<div class="p-8 bg-white/5">
 <p class="font-headline font-bold text-white text-sm uppercase mb-1">Audit-Ready Reports</p>
-<p class="text-[10px] text-indigo-300 font-label uppercase">RBI/SEBI formatted PDF.</p>
+<p class="text-[10px] text-zinc-300 font-label uppercase">RBI/SEBI formatted PDF.</p>
 </div>
 </div>
 </div>
 </section>
 <!-- CTA Section -->
-<section class="py-32 relative z-10 overflow-hidden bg-[#060b18]">
-<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(99,102,241,0.08)_0%,_transparent_70%)]"></div>
+<section class="py-32 relative z-10 overflow-hidden bg-black">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.05)_0%,_transparent_70%)]"></div>
 <!-- Floating orbs -->
-<div class="floating-orb w-72 h-72 bg-indigo-600/10 top-10 -left-20"></div>
-<div class="floating-orb w-96 h-96 bg-violet-600/8 -bottom-20 right-0" style="animation-delay:-4s"></div>
+<div class="floating-orb w-72 h-72 bg-white/5 top-10 -left-20"></div>
+<div class="floating-orb w-96 h-96 bg-white/3 -bottom-20 right-0" style="animation-delay:-4s"></div>
 <div class="max-w-4xl mx-auto px-6 text-center relative z-10 reveal">
 <h2 class="text-4xl md:text-6xl font-headline font-bold text-white mb-8 uppercase tracking-tighter leading-none">The RBI auditor is coming. <br/> Will you have an answer?</h2>
-<p class="text-amber-400 text-xl font-bold mb-6 tracking-wide">â‚¹250 crore per violation. Enforcement is here.</p>
-<p class="text-slate-400 font-body mb-12 max-w-2xl mx-auto leading-relaxed">Don't wait for a notice. Secure your AI infrastructure with our tamper-proof compliance layer today.</p>
+<p class="text-white text-xl font-bold mb-6 tracking-wide">ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹250 crore per violation. Enforcement is here.</p>
+<p class="text-zinc-500 font-body mb-12 max-w-2xl mx-auto leading-relaxed">Don't wait for a notice. Secure your AI infrastructure with our tamper-proof compliance layer today.</p>
 <div class="flex flex-col sm:flex-row justify-center gap-6">
-<button class="bg-indigo-500 text-white font-headline font-bold text-xs uppercase tracking-[0.2em] px-12 py-5 hover:bg-indigo-400 transition-all shadow-[0_0_40px_rgba(99,102,241,0.25)] active:scale-95" onclick="alert('Demo request submitted! Our team will reach out within 24 hours.')">Request Demo</button>
-<button class="bg-transparent border border-indigo-400/30 text-white font-headline font-bold text-xs uppercase tracking-[0.2em] px-12 py-5 hover:bg-indigo-500/15 transition-all active:scale-95" onclick="document.getElementById('docs-section').scrollIntoView({behavior:'smooth'})">Read the Docs</button>
+<button class="bg-white text-white font-headline font-bold text-xs uppercase tracking-[0.2em] px-12 py-5 hover:bg-zinc-200 transition-all shadow-[0_0_40px_rgba(255,255,255,0.1)] active:scale-95" onclick="alert('Demo request submitted! Our team will reach out within 24 hours.')">Request Demo</button>
+<button class="bg-transparent border border-white/20 text-white font-headline font-bold text-xs uppercase tracking-[0.2em] px-12 py-5 hover:bg-white/10 transition-all active:scale-95" onclick="document.getElementById('docs-section').scrollIntoView({behavior:'smooth'})">Read the Docs</button>
 </div>
 </div>
 </section>
 <!-- Docs Section -->
-<section id="docs-section" class="relative z-10 py-24 bg-[#0a0f1e] border-y border-indigo-500/10">
+<section id="docs-section" class="relative z-10 py-24 bg-zinc-950 border-y border-white/10">
 <div class="max-w-7xl mx-auto px-6">
 <div class="text-center mb-16 reveal">
 <h2 class="text-4xl font-headline font-bold text-white mb-4 uppercase tracking-tighter">Documentation</h2>
-<p class="text-slate-400 max-w-2xl mx-auto font-body">Everything you need to integrate, configure, and deploy the compliance layer.</p>
+<p class="text-zinc-500 max-w-2xl mx-auto font-body">Everything you need to integrate, configure, and deploy the compliance layer.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 stagger-children">
 <!-- Quickstart -->
-<a href="#" class="group block p-8 border border-slate-700/25 hover:border-indigo-400/40 bg-[#0c1222]/80 transition-all duration-300 card-hover">
-<span class="material-symbols-outlined text-indigo-300 mb-4 text-3xl">rocket_launch</span>
+<a href="#" class="group block p-8 border border-white/10 hover:border-white/30 bg-black/80 transition-all duration-300 card-hover">
+<span class="material-symbols-outlined text-zinc-300 mb-4 text-3xl">rocket_launch</span>
 <h3 class="font-headline font-bold text-white text-sm uppercase tracking-widest mb-3">Quickstart Guide</h3>
-<p class="text-slate-400 text-xs font-body leading-relaxed mb-6">Install, set your API key, and run the proxy in under 5 minutes. Includes demo simulator walkthrough.</p>
-<span class="text-slate-500 group-hover:text-indigo-300 text-[10px] uppercase tracking-widest font-label flex items-center gap-2 transition-colors">Get started <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+<p class="text-zinc-500 text-xs font-body leading-relaxed mb-6">Install, set your API key, and run the proxy in under 5 minutes. Includes demo simulator walkthrough.</p>
+<span class="text-zinc-400 group-hover:text-zinc-300 text-[10px] uppercase tracking-widest font-label flex items-center gap-2 transition-colors">Get started <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
 </a>
 <!-- API Reference -->
-<a href="#" class="group block p-8 border border-slate-700/25 hover:border-indigo-400/40 bg-[#0c1222]/80 transition-all duration-300 card-hover">
-<span class="material-symbols-outlined text-indigo-300 mb-4 text-3xl">terminal</span>
+<a href="#" class="group block p-8 border border-white/10 hover:border-white/30 bg-black/80 transition-all duration-300 card-hover">
+<span class="material-symbols-outlined text-zinc-300 mb-4 text-3xl">terminal</span>
 <h3 class="font-headline font-bold text-white text-sm uppercase tracking-widest mb-3">API Reference</h3>
-<p class="text-slate-400 text-xs font-body leading-relaxed mb-6">Full endpoint docs â€” POST /audit, GET /audit/log, GET /audit/verify, POST /report, and more.</p>
-<span class="text-slate-500 group-hover:text-indigo-300 text-[10px] uppercase tracking-widest font-label flex items-center gap-2 transition-colors">View endpoints <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+<p class="text-zinc-500 text-xs font-body leading-relaxed mb-6">Full endpoint docs ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â POST /audit, GET /audit/log, GET /audit/verify, POST /report, and more.</p>
+<span class="text-zinc-400 group-hover:text-zinc-300 text-[10px] uppercase tracking-widest font-label flex items-center gap-2 transition-colors">View endpoints <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
 </a>
 <!-- Compliance Rulebook -->
-<a href="#" class="group block p-8 border border-slate-700/25 hover:border-indigo-400/40 bg-[#0c1222]/80 transition-all duration-300 card-hover">
-<span class="material-symbols-outlined text-indigo-300 mb-4 text-3xl">menu_book</span>
+<a href="#" class="group block p-8 border border-white/10 hover:border-white/30 bg-black/80 transition-all duration-300 card-hover">
+<span class="material-symbols-outlined text-zinc-300 mb-4 text-3xl">menu_book</span>
 <h3 class="font-headline font-bold text-white text-sm uppercase tracking-widest mb-3">Compliance Rulebook</h3>
-<p class="text-slate-400 text-xs font-body leading-relaxed mb-6">DPDP Act, RBI FREE-AI, IRDAI, MeitY â€” every rule, trigger, and action mapped in policies.json.</p>
-<span class="text-slate-500 group-hover:text-indigo-300 text-[10px] uppercase tracking-widest font-label flex items-center gap-2 transition-colors">Read rules <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+<p class="text-zinc-500 text-xs font-body leading-relaxed mb-6">DPDP Act, RBI FREE-AI, IRDAI, MeitY ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â every rule, trigger, and action mapped in policies.json.</p>
+<span class="text-zinc-400 group-hover:text-zinc-300 text-[10px] uppercase tracking-widest font-label flex items-center gap-2 transition-colors">Read rules <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
 </a>
 <!-- Architecture -->
-<a href="#" class="group block p-8 border border-slate-700/25 hover:border-indigo-400/40 bg-[#0c1222]/80 transition-all duration-300 card-hover">
-<span class="material-symbols-outlined text-indigo-300 mb-4 text-3xl">account_tree</span>
+<a href="#" class="group block p-8 border border-white/10 hover:border-white/30 bg-black/80 transition-all duration-300 card-hover">
+<span class="material-symbols-outlined text-zinc-300 mb-4 text-3xl">account_tree</span>
 <h3 class="font-headline font-bold text-white text-sm uppercase tracking-widest mb-3">Architecture</h3>
-<p class="text-slate-400 text-xs font-body leading-relaxed mb-6">Three-agent pipeline deep dive â€” Classifier, Policy Engine, Audit Logger, and how they chain together.</p>
-<span class="text-slate-500 group-hover:text-indigo-300 text-[10px] uppercase tracking-widest font-label flex items-center gap-2 transition-colors">Explore <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+<p class="text-zinc-500 text-xs font-body leading-relaxed mb-6">Three-agent pipeline deep dive ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Classifier, Policy Engine, Audit Logger, and how they chain together.</p>
+<span class="text-zinc-400 group-hover:text-zinc-300 text-[10px] uppercase tracking-widest font-label flex items-center gap-2 transition-colors">Explore <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
 </a>
 <!-- Hash Chain Verification -->
-<a href="#" class="group block p-8 border border-slate-700/25 hover:border-indigo-400/40 bg-[#0c1222]/80 transition-all duration-300 card-hover">
-<span class="material-symbols-outlined text-indigo-300 mb-4 text-3xl">verified_user</span>
+<a href="#" class="group block p-8 border border-white/10 hover:border-white/30 bg-black/80 transition-all duration-300 card-hover">
+<span class="material-symbols-outlined text-zinc-300 mb-4 text-3xl">verified_user</span>
 <h3 class="font-headline font-bold text-white text-sm uppercase tracking-widest mb-3">Hash Chain &amp; Integrity</h3>
-<p class="text-slate-400 text-xs font-body leading-relaxed mb-6">How SHA-256 hash-chaining works, chain verification API, and tamper detection explained.</p>
-<span class="text-slate-500 group-hover:text-indigo-300 text-[10px] uppercase tracking-widest font-label flex items-center gap-2 transition-colors">Learn more <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+<p class="text-zinc-500 text-xs font-body leading-relaxed mb-6">How SHA-256 hash-chaining works, chain verification API, and tamper detection explained.</p>
+<span class="text-zinc-400 group-hover:text-zinc-300 text-[10px] uppercase tracking-widest font-label flex items-center gap-2 transition-colors">Learn more <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
 </a>
 <!-- PDF Reports -->
-<a href="#" class="group block p-8 border border-slate-700/25 hover:border-indigo-400/40 bg-[#0c1222]/80 transition-all duration-300 card-hover">
-<span class="material-symbols-outlined text-indigo-300 mb-4 text-3xl">picture_as_pdf</span>
+<a href="#" class="group block p-8 border border-white/10 hover:border-white/30 bg-black/80 transition-all duration-300 card-hover">
+<span class="material-symbols-outlined text-zinc-300 mb-4 text-3xl">picture_as_pdf</span>
 <h3 class="font-headline font-bold text-white text-sm uppercase tracking-widest mb-3">Report Generation</h3>
-<p class="text-slate-400 text-xs font-body leading-relaxed mb-6">Generate regulator-ready PDFs via API or dashboard. Formatted for RBI, DPBI, and IRDAI inspections.</p>
-<span class="text-slate-500 group-hover:text-indigo-300 text-[10px] uppercase tracking-widest font-label flex items-center gap-2 transition-colors">See samples <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+<p class="text-zinc-500 text-xs font-body leading-relaxed mb-6">Generate regulator-ready PDFs via API or dashboard. Formatted for RBI, DPBI, and IRDAI inspections.</p>
+<span class="text-zinc-400 group-hover:text-zinc-300 text-[10px] uppercase tracking-widest font-label flex items-center gap-2 transition-colors">See samples <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
 </a>
 </div>
 </div>
 </section>
 <!-- Footer -->
-<footer class="relative z-10 bg-[#060b18] w-full border-t border-slate-700/30">
+<footer class="relative z-10 bg-black w-full border-t border-white/10">
 <div class="max-w-7xl mx-auto px-8 py-20 grid grid-cols-2 md:grid-cols-4 gap-12">
 <div class="space-y-8">
 <div class="text-xl font-bold text-white font-headline tracking-widest uppercase">AuditTrail AI</div>
-<p class="text-slate-600 font-body text-xs leading-relaxed uppercase tracking-wider">Securing the future of AI in India through immutable compliance and technical excellence.</p>
+<p class="text-zinc-600 font-body text-xs leading-relaxed uppercase tracking-wider">Securing the future of AI in India through immutable compliance and technical excellence.</p>
 </div>
 <div class="space-y-6">
 <h4 class="text-white font-headline font-bold text-[10px] uppercase tracking-[0.3em]">Product</h4>
 <nav class="flex flex-col gap-3">
-<a class="text-slate-500 hover:text-indigo-300 transition-colors text-[10px] uppercase tracking-widest font-label" href="#">PII Classifier</a>
-<a class="text-slate-500 hover:text-indigo-300 transition-colors text-[10px] uppercase tracking-widest font-label" href="#">Policy Engine</a>
-<a class="text-slate-500 hover:text-indigo-300 transition-colors text-[10px] uppercase tracking-widest font-label" href="#">Audit Ledger</a>
+<a class="text-zinc-500 hover:text-white transition-colors text-[10px] uppercase tracking-widest font-label" href="#">PII Classifier</a>
+<a class="text-zinc-500 hover:text-white transition-colors text-[10px] uppercase tracking-widest font-label" href="#">Policy Engine</a>
+<a class="text-zinc-500 hover:text-white transition-colors text-[10px] uppercase tracking-widest font-label" href="#">Audit Ledger</a>
 </nav>
 </div>
 <div class="space-y-6">
 <h4 class="text-white font-headline font-bold text-[10px] uppercase tracking-[0.3em]">Compliance</h4>
 <nav class="flex flex-col gap-3">
-<a class="text-slate-500 hover:text-indigo-300 transition-colors text-[10px] uppercase tracking-widest font-label" href="#">DPDP Act 2023</a>
-<a class="text-slate-500 hover:text-indigo-300 transition-colors text-[10px] uppercase tracking-widest font-label" href="#">RBI Guidelines</a>
-<a class="text-slate-500 hover:text-indigo-300 transition-colors text-[10px] uppercase tracking-widest font-label" href="#">IRDAI Rules</a>
+<a class="text-zinc-500 hover:text-white transition-colors text-[10px] uppercase tracking-widest font-label" href="#">DPDP Act 2023</a>
+<a class="text-zinc-500 hover:text-white transition-colors text-[10px] uppercase tracking-widest font-label" href="#">RBI Guidelines</a>
+<a class="text-zinc-500 hover:text-white transition-colors text-[10px] uppercase tracking-widest font-label" href="#">IRDAI Rules</a>
 </nav>
 </div>
 <div class="space-y-6">
 <h4 class="text-white font-headline font-bold text-[10px] uppercase tracking-[0.3em]">Legal</h4>
 <nav class="flex flex-col gap-3">
-<a class="text-slate-500 hover:text-indigo-300 transition-colors text-[10px] uppercase tracking-widest font-label" href="#">Privacy Policy</a>
-<a class="text-slate-500 hover:text-indigo-300 transition-colors text-[10px] uppercase tracking-widest font-label" href="#">Terms of Service</a>
-<a class="text-slate-500 hover:text-indigo-300 transition-colors text-[10px] uppercase tracking-widest font-label" href="#">Security</a>
+<a class="text-zinc-500 hover:text-white transition-colors text-[10px] uppercase tracking-widest font-label" href="#">Privacy Policy</a>
+<a class="text-zinc-500 hover:text-white transition-colors text-[10px] uppercase tracking-widest font-label" href="#">Terms of Service</a>
+<a class="text-zinc-500 hover:text-white transition-colors text-[10px] uppercase tracking-widest font-label" href="#">Security</a>
 </nav>
 </div>
 </div>
-<div class="max-w-7xl mx-auto px-8 py-10 border-t border-slate-700/20 text-center">
-<p class="text-slate-600 font-label text-[9px] uppercase tracking-[0.4em]">Â© 2026 AuditTrail AI. Built for DPDP &amp; RBI Compliance.</p>
+<div class="max-w-7xl mx-auto px-8 py-10 border-t border-white/5 text-center">
+<p class="text-zinc-600 font-label text-[9px] uppercase tracking-[0.4em]">Ãƒâ€šÃ‚Â© 2026 AuditTrail AI. Built for DPDP &amp; RBI Compliance.</p>
 </div>
 </footer>
 <!-- Scroll Reveal & Animations -->
@@ -662,10 +662,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const nav = document.querySelector('nav');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 60) {
-      nav.classList.add('shadow-lg', 'shadow-indigo-500/5');
-      nav.style.backgroundColor = 'rgba(6, 11, 24, 0.95)';
+      nav.classList.add('shadow-lg', 'shadow-white/5');
+      nav.style.backgroundColor = 'rgba(0, 0, 0, 0.95)';
     } else {
-      nav.classList.remove('shadow-lg', 'shadow-indigo-500/5');
+      nav.classList.remove('shadow-lg', 'shadow-white/5');
       nav.style.backgroundColor = '';
     }
   }, { passive: true });
