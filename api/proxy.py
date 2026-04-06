@@ -16,6 +16,7 @@ from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 from agents import classifier, policy_checker, logger, report_generator
@@ -50,6 +51,10 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Serve static files (images, videos, etc.) from the ui/ folder
+_ui_dir = Path(__file__).resolve().parent.parent / "ui"
+app.mount("/static", StaticFiles(directory=str(_ui_dir)), name="static")
 
 
 # --- Request / Response Models ---
